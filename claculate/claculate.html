@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>surya claculater</title>
+    <style>
+
+    </style>
+</head>
+<body>
+ <div
+    <h1 id="calculate">calculate </h1>
+   <h3 id="wellcome_text_prompt">hello, WELLCOME to surya claculate page! </h3> 
+ </div>
+ <div id="claculate_box">
+   <input type="text" id="text_number_field" placeholder="enter number">
+    <button id="btn_1"><h1 id="number_1">1</h1></button>
+    <button id="btn_2"><h1 id="number_2">2</h1></button>
+    <button id="btn_3"><h1 id="number_3">3</h1></button>
+    <button id="btn_4"><h1 id="number_4">4</h1></button>
+    <button id="btn_5"><h1 id="number_5">5</h1></button>
+    <button id="btn_6"><h1 id="number_6">6</h1></button>
+    <button id="btn_7"><h1 id="number_7">7</h1></button>
+    <button id="btn_8"><h1 id="number_8">8</h1></button>
+    <button id="btn_9"><h1 id="number_9">9</h1></button>
+    <button id="btn_0"><h1 id="number_0">0</h1></button>
+    <button id="btn_plus"><h1 id="plus">+</h1></button>
+    <button id="btn_minus"><h1 id="minus">-</h1></button>
+    <button id="btn_multiply"><h1 id="multiply">*</h1></button>
+    <button id="btn_divide"><h1 id="divide">/</h1></button>
+    <button id="btn_equal"><h1 id="equal">=</h1></button>
+ </div>
+</body>
+<script>
+     const textField = document.getElementById('text_number_field');
+     const button = document.getElementById('btn_1');
+     button.addEventListener('click', () => {
+        textField.value += '1';
+    });
+    const button2 = document.getElementById('btn_2');
+    button2.addEventListener('click', () => {
+        textField.value += '2';
+    });
+    const button3 = document.getElementById('btn_3');
+    button3.addEventListener('click', () => {
+        textField.value += '3';
+    });
+    const BUTTON4 = document.getElementById('btn_4');
+    BUTTON4.addEventListener('click',()=>{
+        textField.value += '4';
+    })
+    const BUTTON5 = document.getElementById('btn_5');
+    BUTTON5.addEventListener('click',()=>{
+        textField.value += '5';
+    })
+    const BUTTON6 = document.getElementById('btn_6');
+    BUTTON6.addEventListener('click',()=>{
+        textField.value += '6';
+    })  
+    const BUTTON7 = document.getElementById('btn_7');
+    BUTTON7.addEventListener('click',()=>{ 
+        textField.value += '7';
+    })
+    const BUTTON8 = document.getElementById('btn_8');
+    BUTTON8.addEventListener('click',()=>{
+        textField.value += '8';
+    })
+    const BUTTON9 = document.getElementById('btn_9');
+    BUTTON9.addEventListener('click',()=>{
+        textField.value += '9';
+    })
+    const BUTTON0 = document.getElementById('btn_0');
+    BUTTON0.addEventListener('click',()=>{
+        textField.value += '0';
+    })
+    const BUTTONPLUS = document.getElementById('btn_plus');
+    BUTTONPLUS.addEventListener('click',()=>{   
+        textField.value += '+';
+    })
+    const BUTTONMINUS = document.getElementById('btn_minus');
+    BUTTONMINUS.addEventListener('click',()=>{
+        textField.value += '-';
+    })
+    const BUTTONMULTIPLY = document.getElementById('btn_multiply');
+    BUTTONMULTIPLY.addEventListener('click',()=>{
+        textField.value += '*';
+    })
+    const BUTTONDIVIDE = document.getElementById('btn_divide');
+    BUTTONDIVIDE.addEventListener('click',()=>{
+        textField.value += '/';
+    })
+    </script>
+</html>
