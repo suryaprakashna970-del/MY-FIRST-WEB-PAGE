@@ -1,0 +1,16 @@
+rollno,name,email,password,gender,dept,age
+101,Liam Smith,liam.smith@example.com,P@ssw0rd1,Male,Computer Science,20
+102,Olivia Jones,olivia.jones@example.com,SecureWord2,Female,Electrical Eng,21
+103,Noah Brown,noah.brown@example.com,MySecret3!,Male,Mechanical Eng,19
+104,Emma Davis,emma.davis@example.com,Davis2026#,Female,Civil Eng,22
+105,Oliver Miller,oliver.miller@example.com,OliMill$5,Male,Computer Science,20
+106,Ava Wilson,ava.wilson@example.com,AvaW!890,Female,Chemical Eng,21
+107,Elijah Moore,elijah.moore@example.com,EliM@991,Male,Electrical Eng,20
+108,Charlotte Taylor,charlotte.taylor@example.com,CharT#22,Female,BioTech,19
+109,William Anderson,william.a@example.com,WillAnd!4,Male,Mechanical Eng,22
+110,Sophia Thomas,sophia.t@example.com,SophTh0m*,Female,Computer Science,21
+111,James Jackson,james.j@example.com,JamJack%7,Male,Civil Eng,20
+112,Amelia White,amelia.w@example.com,AmelWh!te8,Female,BioTech,21
+113,Benjamin Harris,ben.harris@example.com,BenHar$12,Male,Chemical Eng,19
+114,Isabella Martin,isabella.m@example.com,IsaMart#9,Female,Electrical Eng,22
+115,Lucas Thompson,lucas.t@example.com,LucThomp!0,Male,Computer Science,20
