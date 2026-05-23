@@ -11,36 +11,43 @@ body{
     justify-content: center;
     align-items: center;
     height: 100vh;
-    width: 100vh;
+    width: 200vh;
 }
 div{
    background-color: rgb(244, 240, 240);
-   width: 40vh;
+   width: 50vh;
+   height: 60vh;
+
 
 }
 .frontpagetext{
     display: block;
     margin-bottom: 10px;
+    margin-top: 10px;
     margin: auto;
 
 }
 #login_email_textfield{
     height: 20px;
     width: 200PX;
-    margin-top: 5px;
-    margin-bottom: 20px;
+    
+    margin-bottom: 50px;
 }
 
 #login_button{
       margin: auto;
+      margin-top: 50px;
       margin-bottom: 10px;
       width: 200px;
+      height: 30px;
+      background-color:green;
+      color: white;
+      font-size: 20px;
 }
 
 #login_password_textfield{
     height: 20px;
     width: 200PX;
-    margin-top: 10px;
     margin-bottom: 10px;
 }
 
@@ -50,17 +57,28 @@ div{
     margin-top: 20px;
     font-size: 25px;
 }
+.enter_text_sentence{
+    margin-left: 70px;
+    margin-top: 100px;
+    font-size: 10px;
+}
+#text_login_email{
+    margin-top: 1000px;
+}
 </style>
 <body>
     <div class="frontpage_div" id="login_div">
         <B ID = "login_write">LOGIN FORM</B>
      <form action="/submit" method="POST" class = "frontpagefrom" id="login_from">
-        
+        <b class="enter_text_sentence" id = "text_login_email">ENTER YOUR EMAIL</b>
         <input type="text" name = "username" placeholder="ENTER YOUR EMAIL" class="frontpagetext" id="login_email_textfield" >
-       
+       <B class="enter_text_sentence" id = "text_password">ENTER YOUR PASSWORD</B>
         <input type = "password" name="password" placeholder="ENTER YOUR PASSWORD" class="frontpagetext" id="login_password_textfield">
-        <button name="submit_button" class="frontpagetext" id="login_button">SUBMIT</button>
+        <button name="submit_button" name="" class="frontpagetext" id="login_button">SUBMIT</button>
      </form>
     </div>
 </body>
+<script>
+    
+</script>
 </html>
