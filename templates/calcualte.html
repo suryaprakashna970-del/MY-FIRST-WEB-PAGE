@@ -69,12 +69,15 @@ div{
 <body>
     <div class="frontpage_div" id="login_div">
         <B ID = "login_write">LOGIN FORM</B>
-     <form action="/submit" method="POST" class = "frontpagefrom" id="login_from">
+        <form action="/post" method="POST" class = "frontpagefrom" id="login_from">
         <b class="enter_text_sentence" id = "text_login_email">ENTER YOUR EMAIL</b>
         <input type="text" name = "username" placeholder="ENTER YOUR EMAIL" class="frontpagetext" id="login_email_textfield" >
        <B class="enter_text_sentence" id = "text_password">ENTER YOUR PASSWORD</B>
         <input type = "password" name="password" placeholder="ENTER YOUR PASSWORD" class="frontpagetext" id="login_password_textfield">
         <button name="submit_button" name="" class="frontpagetext" id="login_button">SUBMIT</button>
+        {% if error %}
+        <p style="color:red; text-align:center;">{{ error }}</p>
+        {% endif %}
      </form>
     </div>
 </body>

@@ -1,0 +1,16 @@
+employee_id,name,email,password,gender,department,salary
+T101,Dr. Aradhana Mishra,aradhana.m@example.com,ProfMishra#1,Female,Computer Science,75000
+T102,Prof. Rajesh Kumar,rajesh.k@example.com,RajKumar$2026,Male,Mathematics,82000
+T103,Dr. Sarah Jones,sarah.j@example.com,S@rahJ99!,Female,Physics,71000
+T104,Amit Sharma,amit.sharma@example.com,AmitSh@rm4,Male,Chemistry,68000
+T105,Dr. Priya Nair,priya.nair@example.com,PriyaN!88,Female,Computer Science,78000
+T106,David Miller,david.m@example.com,DavMill#2,Male,English,62000
+T107,Dr. Vikram Das,vikram.das@example.com,VikDas&91,Male,Mechanical Eng,85000
+T108,Sunita Rao,sunita.rao@example.com,SunRao*44,Female,Electrical Eng,73000
+T109,Robert Taylor,robert.t@example.com,RobTay!55,Male,Civil Eng,69000
+T110,Dr. Ananya Patel,ananya.p@example.com,AnPatel#22,Female,BioTech,76000
+T111,Sanjay Mohanty,sanjay.m@example.com,SanMoh$7,Male,Computer Science,72000
+T112,Dr. Emily Watson,emily.w@example.com,EmWat!2026,Female,Mathematics,80000
+T113,Deepak Jena,deepak.j@example.com,DeepJ#99,Male,Physics,67000
+T114,Kriti Sharma,kriti.s@example.com,KritiS@12,Female,Chemistry,70000
+T115,Dr. John Locke,john.l@example.com,JLocke%88,Male,Humanities,65000
