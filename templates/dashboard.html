@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #date_time{
+    color: black;
+    font-size: 18px;
+    margin: 20px;
+}
+</style>
+<body>
+    <div id = "wellcome">
+    <H1 id="wellcome">WELLCOME</H1>
+    <p id="date_time"></p>
+    </div>
+</body>
+<script>
+let today = new Date();
+
+let options = {
+    weekday: 'long',
+    year: 'numeric',
+    month: 'long',
+    day: 'numeric'
+};
+
+document.getElementById("date_time").innerHTML =
+today.toLocaleDateString('en-US', options);
+</script>
+</html>

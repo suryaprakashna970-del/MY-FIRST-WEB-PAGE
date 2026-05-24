@@ -5,7 +5,129 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<style> 
+body{
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+} 
+.upper_deriver{
+    background-color:rgb(4,69,127);
+    color: white;
+    height: 20px;
+    padding: 15px;
+}
+
+#student_management_text{
+    font-size: 20px;
+    text-align: center;
+    margin-top: 15px;
+    font-family: Arial;
+}
+
+#logout_button{
+    color: white;
+    float: right;
+    margin-right: 20px;
+    text-decoration: none;
+    font-size: 20px;
+}
+#notifactions{
+    float: right;
+    margin-right: 15px;
+    
+}
+.menu{
+    width: 200px;
+    height: 100vh;
+    background:rgb(227,234,253);
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+}
+.menu button{
+    background:rgb(227,234,253);
+    color:black;
+    font-size: 20px;
+    font-weight: 400;
+    border: none;
+    padding: 10px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.main-container{
+    display: flex;
+}
+
+.page{
+    padding: 20px;
+    font-size: 20px;
+    margin-left: 50px;
+}
+
+.menu button.active{
+    background-color:rgb(4,69,127);
+    color: white;
+}
+#date_time{
+    color: black;
+    font-size: 18px;
+    margin: 20px;
+}
+</style>
 <body>
-    <div class="upper_deriver" id="upper_deriver-">
+    <div class="upper_deriver" id="upper_deriver-colour">
+        <b id = "student_management_text">SRI SRI University Student Portal</b>
+       <a href="/logout" id="logout_button">Logout</a>
+       <i class="fa-solid fa-bell" id = "notifactions"></i>
+    </div>
+    <div class="main-container">
+
+    <div class="menu">
+        <button class="active" onclick="showPage('dashboard')">Dashboard</button>
+        <button onclick="showPage('attendance')">Attendance</button>
+    </div>
+
+    <div id="dashboard" class="page">
+        <div id = "wellcome">
+         <H1 id="wellcome">WELLCOME</H1>
+         <p id="date_time"></p>
+        </div>
+    </div>
+
+    <div id="attendance" class="page" style="display:none;">
+        <h2>Attendance</h2>
+        <p>Your Attendance: 90%</p>
+    </div>
+
+</div>
+<script>
+function showPage(page){
+
+    document.getElementById("dashboard").style.display = "none";
+    document.getElementById("attendance").style.display = "none";
+
+    document.getElementById(page).style.display = "block";
+
+    let buttons = document.querySelectorAll(".menu button");
+    buttons.forEach(btn => btn.classList.remove("active"));
+
+    document.querySelector(`[onclick="showPage('${page}')"]`).classList.add("active");
+}
+
+let today = new Date();
+
+let options = {
+    weekday: 'long',
+    year: 'numeric',
+    month: 'long',
+    day: 'numeric'
+};
+
+document.getElementById("date_time").innerHTML =
+today.toLocaleDateString('en-US', options);
+</script>
 </body>
 </html>
